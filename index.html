@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An offline, shared-screen game of Ra for 2–5 humans and bots."><title>Ra · Three Epochs</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top" data-learn="tools"><div class="brand"><span class="sunmark" aria-hidden="true">☀</span><div><h1>RA</h1><span>THREE EPOCHS · ONE DYNASTY</span></div></div><nav aria-label="Game tools"><button id="newGame">New game</button><button id="save">Export save</button><button id="load">Import save</button><button id="learn">Learning center</button><button id="help">Rules reference</button></nav></header>
+<main id="app"></main>
+<footer>Ra by Reiner Knizia · Private digital adaptation of your supplied 2025 rules · Offline &amp; local</footer>
+<input type="file" id="saveFile" accept=".json,application/json" hidden>
+<dialog id="modal"><button class="close" id="closeModal" aria-label="Close dialog">×</button><div id="modalContent"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="engine.js"></script><script src="scoring.js"></script><script src="learn.js"></script><script src="app.js"></script>
+</body></html>

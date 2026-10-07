@@ -1,0 +1,138 @@
+RA VERIFICATION — 6 October 2026, player scoring edition
+
+ENGINE CHECKS
+19 test groups passed, including 240 deterministic complete bot games.
+All 2–5 player counts and all three bot levels were covered (20 seeds
+per count and level). Every action was checked for tile and Sun Disk
+conservation, legal active state, and save-compatible structure.
+
+Complete simulated games: 240
+Player actions and phase transitions: 69,910
+Epochs ending on final Ra: 427
+Epochs ending after all disks used: 293
+Every game completed exactly three scoring rounds and a verified winner.
+Turn, auction, disaster, God action, and Epoch-review phases all occurred.
+
+Targeted fixtures verify:
+- Printed tile quantities, disk setup, opening player and Ra limits.
+- Mandatory caller bid, one-round order, increasing bids, losing disks.
+- Empty-lot disk auctions, full-track draw restriction, all-pass outcomes.
+- Final Ra has no auction; used disks end Epoch; spent players skipped.
+- All four disaster types, newly won tiles, no/insufficient targets,
+  selectable type losses, and Drought's Flood-before-Nile priority.
+- Multiple God trades, non-God restriction, immediate disaster resolution.
+- Cancelling God selection keeps the turn; finishing without spending
+  is rejected so that selection cannot become an illegal free pass.
+- Pharaoh ties, river activation, Gods, Gold, distinct Civilizations,
+  Monuments' diversity and multiplicity, and final Sun Disk awards.
+- Zero floor, cleanup, fresh disk availability and next Epoch leader.
+- Final victory and score-tie Sun Disk tiebreak.
+- Save round trips mid-auction and mid-disaster, corrupt state rejection.
+- Hidden bag order does not change bot decisions; tied disk extremes.
+
+Another 180 mixed-level games (one bot of each level, rotated seats)
+finished successfully: Strategic won 83, Balanced 68, Relaxed 29.
+Total final-bot-engine complete simulations: 420.
+
+BROWSER / UI CHECKS
+Microsoft Edge (Chromium) launched index.html directly with a file:// URL
+in an offline browser context. There were zero external network requests
+and zero uncaught JavaScript errors.
+
+Through the displayed controls:
+- All 2–5 player setup forms and controller selections checked.
+- All seven practice steps completed, including forced bid and exchange.
+- Human drawing, invoking, counter-bidding and winner exchange checked.
+- Drought choice buttons discarded both old and newly won Floods first.
+- God target highlighting, taking a tile and finishing the action checked.
+- Exported a real browser download; imported it and compared full state.
+- Reloaded the page and resumed the identical saved state.
+- Completed a five-player Strategic-bot game in the rendered UI:
+  398 actions, all five gameplay phases, three Epochs, final victory.
+  Final scores: 20, 40, 29, 25, 55. Winner: seat 5.
+- A separate two-bot game ran via the real automatic browser timers:
+  168 actions, three Epochs, final victory, no manual stepping.
+- Help displayed eight local rulebook-photo links.
+- At 390px phone width there was no whole-page horizontal overflow;
+  wide score tables scroll inside their panel.
+
+Screenshots of setup, gameplay, disaster resolution, tutorial, victory,
+and phone layout were visually inspected. Text and controls were readable
+with no observed overlap. Testing is not a mathematical proof of every
+possible game; bots use heuristics rather than exhaustive game solving.
+
+PORTABILITY
+The final ZIP is extracted into a separate directory for launch checks.
+Only local HTML, CSS, JavaScript, documentation and rulebook JPG files are
+packaged. There are no package installations, CDNs, fetch calls, server
+dependencies or runtime APIs. The optional tests require Node only when
+run by a developer; the game itself does not.
+
+Direct-file execution has been verified in Edge and Chrome on Windows.
+Other modern browsers are expected to support the same standard APIs but
+were not tested here. Automatic storage can depend on browser settings;
+downloaded JSON saves are the portable save mechanism.
+
+EXPANDED LEARNING CENTER
+Nine freely navigable lessons cover first-opening orientation, the three
+turn actions, bidding and passing, the three auction trigger outcomes,
+Gods, all disasters, all scoring, both Epoch endings and final victory,
+and advanced auction/collection strategy. Each has a knowledge check with
+feedback. Completion progress is stored separately from game saves.
+
+New independent scenario tests passed:
+- All 15 new action practice scenarios complete using the real engine.
+- Every scenario retains all 180 tiles and every Sun Disk.
+- Eight board-tour stops explain and highlight live UI regions.
+- God selection cancellation returns to the same turn and practice step.
+- The lab verifies Flood activation, Civilization diversity, Monument
+  diversity plus multiplicity, final disk exchange and face-down sums,
+  and absence of Monument scoring before Epoch 3.
+- The final-victory example produces an exact 20–20 score tie, correctly
+  won by the player with individual Sun Disk 9 rather than 8.
+
+Both Edge and Chrome were checked directly from index.html while offline:
+- Every new scenario completed by clicking the rendered enabled controls.
+- The original core walkthrough and eight-stop board tour completed.
+- All nine knowledge checks, incorrect-answer retry, and saved progress
+  after reload verified.
+- The scoring lab updated through the displayed controls.
+- A real in-progress auction and its autosave remained byte-for-byte
+  identical after completing or leaving each practice, including the
+  core walkthrough and before its first action.
+- Practice export/import/new-game controls were unavailable, preventing
+  accidental replacement of the real game.
+- Cancel practice, cancel God selection, close learning, reload and resume
+  all preserved the real game.
+- An ordinary game completed to final victory after using the lessons.
+- At 390px width, the page and learning dialog had no horizontal overflow.
+- Zero external requests and zero uncaught JavaScript errors.
+
+The expanded edition is packaged and extracted again for offline launch
+checks. Learning files are ordinary local scripts with no dependencies.
+The rules engine was unchanged by the learning-center update.
+
+PLAYER-CARD SCORING BREAKDOWNS
+The display uses the unchanged rules engine for category awards. New
+presentation checks compare 4,240 player states across four complete
+games (2-5 players), including current estimates and scored snapshots.
+Targeted fixtures cover category arithmetic, inactive Nile, Civilization
+penalties, final-only exclusions, Monument diversity and identical sets,
+Pharaoh ties, cumulative arithmetic and the zero floor.
+
+Edge and Chrome offline UI checks verify:
+- Category counts, badges, reasons and the sum of this Epoch's points.
+- Hidden cumulative totals and owner-controlled reveal/hide.
+- Monument and Sun Disk awards excluded before Epoch 3.
+- Scored snapshots use recorded totals without adding points twice.
+- Temporary collection cleanup and inactive Nile after an Epoch reset.
+- A real Drought marks estimates provisional until losses finish.
+- A complete ordinary three-player game ends with exact final totals
+  and an expandable three-Epoch history on every player card.
+- The zero floor is explained in both arithmetic and history.
+- No whole-page overflow at 390px, no external requests, no JS errors.
+
+Screenshots of live, final and narrow player cards were visually reviewed.
+The extracted scoring-edition ZIP is checked again in both browsers,
+including every learning practice and restoration of the real autosave.
+Game rules and portable save format are unchanged by this update.
